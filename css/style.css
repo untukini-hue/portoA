@@ -1,0 +1,63 @@
+:root{
+    --bg-color:rgb(250, 249, 240);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    margin: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.kata{
+    font-size: 3em;
+}
+
+.foto img{
+    height: 700px;
+    background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(247, 240, 194, 0.6) 100%
+  );
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.3em;
+    background-color: rgba(247, 240, 194, 0.712);
+    text-align: center;
+    width: 25%;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
