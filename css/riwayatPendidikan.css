@@ -119,3 +119,40 @@ body{
     color: white;
 }
 
+@media (max-width: 786px){
+    .foto{
+        height: 20%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kata{
+        margin-top: 5%;
+        height: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .judul{
+        font-size: 1.5em;
+    }
+
+    .periode{
+        font-size: 0.8em;
+    }
+
+    .isi{
+        font-size: 1em;
+    }
+
+    .isiHead{
+        font-size: 1.5em;
+        border-radius: 10px 10px 0 0;
+    }
+}
