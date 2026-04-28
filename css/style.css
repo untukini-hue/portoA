@@ -30,7 +30,7 @@ body{
 }
 
 .content{
-    margin: 150px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -42,6 +42,10 @@ body{
 .kata{
     font-size: 2.5em;
 }
+
+/* .foto{
+    height: 100%;
+} */
 
 .foto img{
     border-radius: 100px;
@@ -71,4 +75,33 @@ body{
 
 .navbar a:hover{
     background-color: var(--sec-color);
+}
+
+@media (max-width: 768px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .foto img{
+        height: 300px;
+    }
+
+    .kata{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kata{
+        font-size: 1em;
+        height: 20%;
+    }
+
+    .navbar a{
+        font-size: 1.2em;
+    }
 }
