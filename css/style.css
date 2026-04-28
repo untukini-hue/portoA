@@ -77,7 +77,7 @@ body{
     background-color: var(--sec-color);
 }
 
-@media (max-width: 768px){
+@media (max-width: 950px){
     .content{
         flex-direction: column;
         justify-content: center;
