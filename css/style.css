@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: OpenSans;
-    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../font/Cinzel-VariableFont_wght.ttf);
     font-weight: 700;
 }
 
@@ -68,13 +68,15 @@ body{
     text-decoration: none;
     color: black;
     font-size: 1.8em;
-    background-color:var(--bg-color);
+    background-color:var(--sec-color);
     text-align: center;
     width: 25%;
+    border: 100px;
+    border-color: black;
 }
 
 .navbar a:hover{
-    background-color: var(--sec-color);
+    background-color: var(--bg-color);
 }
 
 @media (max-width: 768px){
