@@ -1,0 +1,120 @@
+:root{
+    --bg-color:rgb(250, 249, 240);
+    --sec-color: rgba(235, 226, 159, 0.719);
+    --third-color : rgb(250, 249, 237);
+    --shadow : 0 20px 50px rgba(82, 73, 26, 0.87);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: 700;
+}
+
+body{
+    background-image: url(../img/backgroundBio.png);
+    font-family: OpenSans;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.head{
+    display: flex;
+    box-shadow: var(--shadow);
+}
+
+.isiHead{
+    font-size: 3em;
+    width: 10%;
+    text-align: center;
+    background-color: var(--sec-color);
+    border-radius: 20px 20px 0 0;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.1fr;
+    background-color: var(--sec-color);
+    box-shadow: var(--shadow);
+}
+
+.kata{
+    display: flex;
+    height: 65%;
+    width: 80%;
+    background : linear-gradient(to bottom, var(--third-color), rgba(0, 0, 0, 0));
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    
+    flex-direction: column;
+    
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.judul{
+    font-size: 3em;
+    justify-self: center;
+}
+
+.periode{
+    font-size: 1.5em;
+    justify-self: center;
+}
+
+.isi{
+    font-size: 1.2em;
+    justify-self: center;
+}
+
+.foto{
+    padding: 20px;
+    height: 50%;
+    background-color: var(--third-color);
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.foto img{
+    height: 100%;
+    filter: sepia(60%) saturate(150%) hue-rotate(10deg) brightness(1.1) grayscale(20%);
+}
+
+.button{
+    width: 80%;
+    height: 4%;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    border-radius: 10px;
+}
+
+.button a{
+    color: red;
+    text-decoration: none;
+    align-items: center;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.button a:hover{
+    color: white;
+}
