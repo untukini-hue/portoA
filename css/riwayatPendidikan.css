@@ -236,7 +236,10 @@ body{
 
 @media (max-width: 786px){
     .foto{
+        margin: 4%;
         height: 20%;
+        padding: 2%;
+        border-radius: 3%;
     }
 
     .content{
