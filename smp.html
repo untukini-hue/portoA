@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMP</title>
     <link rel="stylesheet" href="css/riwayatPendidikan.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/logo">
 </head>
 <body>
     <div class="container">
@@ -28,19 +29,59 @@
                 </div>
 
                 <div class="isi">
-                    Begitu banyak hal yang saya pelajari di MTS, pelajaran seperti Al-Qur'an Hadis, Akidah Akhlak, Fikih, SKI, Bahasa Arab, Matematika, IPA, IPS, Bahasa Indonesia, Bahasa Inggris, PPKn, PJOK, Seni Budaya dan lainnya. <br>
-                    Saya juga mengikuti ekstrakulikuler yaitu <input type="button" value="OSIM" name="osim" class="btn"> dan <input type="button" value="PRAMUKA" class="btn">.
+                    Begitu banyak hal yang saya pelajari di MTS, pelajaran seperti Al-Qur'an Hadis, Akidah Akhlak, Fikih, SKI, Bahasa Arab, Matematika, IPA, IPS, Bahasa Indonesia, Bahasa Inggris, PPKn, PJOK, Seni Budaya dan lainnya.
+                    Saya juga mengikuti ekstrakulikuler yaitu <button class="btn" onclick="osim()">OSIM</button>.
                 </div>
             </div>
 
             <div class="foto">
-                <img src="img/foto TK.jpeg" alt="Profil">
+                <img src="img/foto SMP.jpeg" alt="Profil">
             </div>
 
             <div class="button">
-                <a href="index.html">EXIT</a>
+                <a href="index.html" onclick="goPage(event)">EXIT</a>
+            </div>
+        </div>
+
+        <div id="OSIM">
+            <div class="exit">
+                <div class="isiExit">
+                    <button onclick="eOsim()">❌</button>
+                </div>
+            </div>
+
+            <div class="isiRiwayat">
+                <p>jjdasdasjnc jasncjnass casncuasncjasncjnascna cjnascascjnasscsacasda</p>
             </div>
         </div>
     </div>
 </body>
+<script>
+function osim() {
+    document.getElementById("OSIM").classList.add("show")
+}
+
+function eOsim() {
+    document.getElementById("OSIM").classList.remove("show")
+}
+
+window.onload = () => {
+    document.body.classList.add("slide-in");
+
+    setTimeout(() => {
+        document.body.classList.remove("slide-in");
+    }, 10);
+};
+
+function goPage(e) {
+    e.preventDefault();
+
+    document.body.classList.add("slide-down");
+
+    setTimeout(() => {
+        window.location = e.target.href;
+    }, 500);
+}
+</script>
 </html>
+

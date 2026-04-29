@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio</title>
+    <title>Halaman Utama</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/logo">
 </head>
 <body>
     <div class="container">
@@ -21,11 +22,24 @@
         </div>
 
         <div class="navbar">
-            <a href="tk.html" class="pilih">TK</a>
-            <a href="sd.html" class="pilih">SD</a>
-            <a href="smp.html" class="pilih">SMP</a>
-            <a href="sma.html" class="pilih">SMA</a>
+            <a href="tk.html" class="pilih" onclick="goPage(event)">TK</a>
+            <a href="sd.html" class="pilih" onclick="goPage(event)">SD</a>
+            <a href="bio.html" class="pilih" onclick="goPage(event)">BIO</a>
+            <a href="smp.html" class="pilih" onclick="goPage(event)">SMP</a>
+            <a href="sma.html" class="pilih" onclick="goPage(event)">SMA</a>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+function goPage(e) {
+    e.preventDefault();
+
+    document.body.classList.add("slide-up");
+
+    setTimeout(() => {
+        window.location = e.target.href;
+    }, 500);
+}
+</script>

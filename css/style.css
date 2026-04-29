@@ -19,6 +19,18 @@
 body{
     background-image: url(../img/backgroundBio.png);
     font-family: OpenSans, sans-serif;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+/* when leaving page */
+.slide-up {
+    transform: translateY(-100%);
+}
+
+/* when entering page */
+.slide-in {
+    transform: translateY(100%);
 }
 
 .container{
@@ -70,7 +82,7 @@ body{
     font-size: 1.8em;
     background-color:var(--sec-color);
     text-align: center;
-    width: 25%;
+    width: 20%;
     border: 100px;
     border-color: black;
 }

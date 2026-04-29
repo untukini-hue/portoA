@@ -59,8 +59,10 @@ body{
 .content{
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 0.1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--sec-color);
     box-shadow: var(--shadow);
 }
@@ -74,7 +76,7 @@ body{
     border-radius: 10px 10px 0 0;
     
     flex-direction: column;
-    
+    margin-top: 2%;
     align-items: center;
     justify-self: center;
     align-self: center;
@@ -93,8 +95,8 @@ body{
 .isi{
     margin-top: 5%;
     font-size: 1em;
-    text-align: center;
-    justify-self: center;
+    justify-self: start;
+    align-self: self-start;
     line-height: 2;
     height: 100%;
 }
@@ -115,7 +117,7 @@ body{
 }
 
 .button{
-    width: 80%;
+    width: 5%;
     height: 4%;
     background-color: var(--third-color);
     display: flex;
@@ -173,46 +175,6 @@ body{
     opacity: 1;
 }
 
-#osis{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50%;
-    width: 22%;
-    background-color: var(--third-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    opacity: 0;
-    transition: 0.2s ease-in;
-    pointer-events: none;
-}
-
-#osis.show{
-    pointer-events: auto;
-    opacity: 1;
-}
-
-#pramuka{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50%;
-    width: 22%;
-    background-color: var(--third-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    opacity: 0;
-    transition: 0.2s ease-in;
-    pointer-events: none;
-}
-
-#pramuka.show{
-    pointer-events: auto;
-    opacity: 1;
-}
-
 .exit{
     display: flex;
     justify-content: end;
@@ -232,6 +194,14 @@ body{
 .isiRiwayat{
     margin: 3%;
     width: 100%;
+}
+
+table{
+    text-align: left;
+}
+
+td{
+    width: 530px;
 }
 
 @media (max-width: 786px){
@@ -266,7 +236,7 @@ body{
     }
 
     .isi{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .isiHead{
@@ -278,19 +248,12 @@ body{
         width: 70%;
     }
 
-    #osis{
-        width: 70%;
-    }
-
-    #pramuka{
-        width: 70%;
-    }
-
     .isiRiwayat{
         font-size: 0.8em;
     }
 
-    .btn{
-        font-size: 1em;
+    td{
+    width: 200px;
+    font-size: 0.9em
     }
 }

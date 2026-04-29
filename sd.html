@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SD</title>
     <link rel="stylesheet" href="css/riwayatPendidikan.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/logo">
 </head>
 <body>
     <div class="container">
@@ -35,7 +36,7 @@
             </div>
 
             <div class="foto">
-                <img src="img/foto TK.jpeg" alt="Profil">
+                <img src="img/foto SD.jpeg" alt="Profil">
             </div>
 
             <div class="button">
@@ -45,3 +46,23 @@
     </div>
 </body>
 </html>
+
+<script>
+window.onload = () => {
+    document.body.classList.add("slide-in");
+
+    setTimeout(() => {
+        document.body.classList.remove("slide-in");
+    }, 10);
+};
+
+function goPage(e) {
+    e.preventDefault();
+
+    document.body.classList.add("slide-down");
+
+    setTimeout(() => {
+        window.location = e.target.href;
+    }, 500);
+}
+</script>
